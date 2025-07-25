@@ -1,12 +1,13 @@
-import { useState } from 'react'
+import React from 'react'
 import './App.css'
+import { Profile } from './Components/Home/Profile'
 
 function App() {
 
   return (
     <>
       <div className="app">
-        My portfolio website
+       <Profile />
       </div>
     </>
   )
