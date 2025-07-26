@@ -5,11 +5,11 @@ import XIcon from "@mui/icons-material/X";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import Typical from "react-typical";
+import './Profile.css';
 
 export const Profile = () => {
   return (
     <div className="profile-container">
-      <div className="profile-details">
         <div className="profile-parent">
           <div className="colz">
             <div className="colz-icon">
@@ -50,7 +50,7 @@ export const Profile = () => {
                  ]}
                  />
               </h1>
-              <span>
+              <span className="profile-role-tagline">
                   I am a passionate developer with a love for creating dynamic and responsive web applications.
               </span>
             </span>
@@ -66,7 +66,6 @@ export const Profile = () => {
           <div className="profile-picture-background">
           </div>
         </div>
-      </div>
     </div>
   );
 };
