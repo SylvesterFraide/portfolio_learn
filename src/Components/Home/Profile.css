@@ -3,9 +3,10 @@
     align-items: center;
     text-align: center;
     justify-content: center;
-    height: 10%;
-    min-height: fit-content;
-    background-color: #161a1d;
+    background-image: url('../../assets/back.avif');
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
 }
 
 .profile-parent {
