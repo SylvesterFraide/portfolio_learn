@@ -13,12 +13,11 @@ const Nabar = () => {
         <Link className="listItems">Portfolio</Link>{" "}
         <Link className="listItems">Clients</Link>
       </div>
-      <div className="desktopMenuBtn">
-        <button>
-          {" "}
-          <ContactPageTwoToneIcon className="contactIcon" /> Contact Me
-        </button>
-      </div>
+
+      <button className="desktopMenuBtn">
+        {" "}
+        <ContactPageTwoToneIcon className="contactIcon" /> Contact Me
+      </button>
     </nav>
   );
 };
