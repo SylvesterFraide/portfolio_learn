@@ -53,3 +53,21 @@
     border-radius: 2rem;
     cursor: pointer;
 }
+
+@media sreen and (max-width:840px) {
+    .image1 {
+        right: -10vw;
+    }
+    .heroContent {
+        font-size: 10vw;
+    }
+    .hello {
+        font-size: 4.5vw;
+    }
+}
+
+@media sreen and (max-width:480px) {
+    .image1 {
+        right: -20vw;
+    }
+}
