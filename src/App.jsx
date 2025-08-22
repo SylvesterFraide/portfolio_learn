@@ -12,7 +12,14 @@ import { Clients } from "./Component/Pages/Clients";
 function App() {
   return (
      <BrowserRouter>
-      <Nabar />
+      <Nabar
+        home="Home"
+        about="About"
+        portfolio="Portfolio"
+        clients="Clients"
+        btn="Contact Me"
+        logo="MyLogo"
+      />
        <Routes>
          <Route path="/" element={<Home />} />
          <Route path="/about" element={<About />} />

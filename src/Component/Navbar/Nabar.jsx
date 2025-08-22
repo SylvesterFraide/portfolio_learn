@@ -3,20 +3,20 @@ import "./Navbar.css";
 import ContactPageTwoToneIcon from "@mui/icons-material/ContactPageTwoTone";
 import { Link } from "react-router-dom";
 
-const Nabar = () => {
+const Nabar = ({home, about, portfolio, clients, btn, logo}) => {
   return (
     <nav className="navbar">
-      <h2 className="logo">logo</h2>
+      <h2 className="logo">{logo}</h2>
       <div className="desktopMenu">
-        <Link className="listItems">Home</Link>{" "}
-        <Link className="listItems">About</Link>
-        <Link className="listItems">Portfolio</Link>{" "}
-        <Link className="listItems">Clients</Link>
+        <Link className="listItems">{home}</Link>{" "}
+        <Link className="listItems">{about}</Link>
+        <Link className="listItems">{portfolio}</Link>{" "}
+        <Link className="listItems">{clients}</Link>
       </div>
 
       <button className="desktopMenuBtn">
         {" "}
-        <ContactPageTwoToneIcon className="contactIcon" /> Contact Me
+        <ContactPageTwoToneIcon className="contactIcon" /> {btn}
       </button>
     </nav>
   );
