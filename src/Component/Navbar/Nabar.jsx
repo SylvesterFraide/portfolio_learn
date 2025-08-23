@@ -8,10 +8,10 @@ const Nabar = ({home, about, portfolio, clients, btn, logo}) => {
     <nav className="navbar">
       <h2 className="logo">{logo}</h2>
       <div className="desktopMenu">
-        <Link className="listItems">{home}</Link>{" "}
-        <Link className="listItems">{about}</Link>
-        <Link className="listItems">{portfolio}</Link>{" "}
-        <Link className="listItems">{clients}</Link>
+        <Link to='/' className="listItems">{home}</Link>{" "}
+        <Link to='/about' className="listItems">{about}</Link>
+        <Link to='/portfolio' className="listItems">{portfolio}</Link>{" "}
+        <Link to='/clients' className="listItems">{clients}</Link>
       </div>
 
       <button className="desktopMenuBtn">
