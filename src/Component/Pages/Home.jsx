@@ -1,7 +1,8 @@
 import React from "react";
 import "./Home.css";
 import { Hero } from "../Hero/Hero";
-import { About } from './About'
+import { About } from "./About";
+import { Portfolio } from "./Portfolio";
 
 export const Home = () => {
   return (
@@ -21,7 +22,7 @@ export const Home = () => {
         hire="Hire Me"
       />
 
-      <About 
+      <About
         skillTitle="What I do"
         skillsDesc="I am a skilled and passionate developer with expertise in web and mobile application development."
         h1="UI/UX Design"
@@ -30,6 +31,11 @@ export const Home = () => {
         p2="Building responsive and interactive websites."
         h3="App Development"
         p3="Creating mobile applications for iOS and Android."
+      />
+
+      <Portfolio
+        worksTitle="My Portfolio"
+        workDesc="Here are some of my recent works:"
       />
     </div>
   );

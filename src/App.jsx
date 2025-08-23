@@ -37,7 +37,15 @@ function App() {
             />
           }
         />
-        <Route path="/portfolio" element={<Portfolio />} />
+        <Route
+          path="/portfolio"
+          element={
+            <Portfolio
+              worksTitle="My Portfolio"
+              workDesc="Here are some of my recent works:"
+            />
+          }
+        />
         <Route path="/clients" element={<Clients />} />
       </Routes>
     </BrowserRouter>
