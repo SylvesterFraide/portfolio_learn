@@ -9,7 +9,7 @@ import project6 from "../../assets/Project6.webp";
 import project7 from "../../assets/Project7.jpg";
 import project from "../../assets/Project8.avif";
 
-export const Portfolio = ({worksTitle, workDesc}) => {
+export const Portfolio = ({ worksTitle, workDesc }) => {
   return (
     <section id="works">
       <h2 className="worksTitle">{worksTitle}</h2>
@@ -24,6 +24,8 @@ export const Portfolio = ({worksTitle, workDesc}) => {
         {/* <img src={project7} alt="project 7" className="worksImg" />
          <img src={project8} alt="project 8" className="worksImg" /> */}
       </div>
+
+      <button className="worksBtn">see more...</button>
     </section>
   );
 };
