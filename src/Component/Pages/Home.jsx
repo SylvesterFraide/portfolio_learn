@@ -3,6 +3,8 @@ import "./Home.css";
 import { Hero } from "../Hero/Hero";
 import { About } from "./About";
 import { Portfolio } from "./Portfolio";
+// import { Clients } from "./Clients";
+import { Contact } from "./Contact";
 
 export const Home = () => {
   return (
@@ -37,6 +39,9 @@ export const Home = () => {
         worksTitle="My Portfolio"
         workDesc=" I take pride in paying attention to the smallest details and making sure that my work is pixel perfect. I am excited to bring my skills and experience to help businesses achieve their goals and create a strong online presence."
       />
+
+      {/* <Clients /> */}
+      <Contact />
     </div>
   );
 };

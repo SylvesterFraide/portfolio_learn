@@ -7,6 +7,7 @@ import { Home } from "./Component/Pages/Home";
 import { About } from "./Component/Pages/About";
 import { Portfolio } from "./Component/Pages/Portfolio";
 import { Clients } from "./Component/Pages/Clients";
+import { Contact } from "./Component/Pages/Contact";
 // import Navbar from './Components/Header/Navbar';
 
 function App() {
@@ -47,6 +48,7 @@ function App() {
           }
         />
         <Route path="/clients" element={<Clients />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </BrowserRouter>
   );

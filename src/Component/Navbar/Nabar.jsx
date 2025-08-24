@@ -14,10 +14,10 @@ const Nabar = ({home, about, portfolio, clients, btn, logo}) => {
         <Link to='/clients' className="listItems">{clients}</Link>
       </div>
 
-      <button className="desktopMenuBtn">
+      <Link to='/contact' className="desktopMenuBtn">
         {" "}
         <ContactPageTwoToneIcon className="contactIcon" /> {btn}
-      </button>
+      </Link>
     </nav>
   );
 };
