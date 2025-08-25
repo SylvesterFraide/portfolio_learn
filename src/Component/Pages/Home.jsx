@@ -6,7 +6,6 @@ import { Portfolio } from "./Portfolio";
 // import { Clients } from "./Clients";
 import { Contact } from "./Contact";
 
-
 export const Home = () => {
   return (
     <div className="home">
@@ -42,7 +41,8 @@ export const Home = () => {
       />
 
       {/* <Clients /> */}
-      <Contact  
+
+      <Contact
         ContactPageTitle="My Clients"
         clientDesc="I have had the opportunity to work with a diverse group of companies.
           Some of the notable companies I have worked with include:"

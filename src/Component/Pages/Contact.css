@@ -10,12 +10,22 @@
   justify-content: center;
 }
 
-.contactPageTitle {
+.clientsPageTitle {
   font-size: 3rem;
   margin-bottom: 1rem;
 }
 
 .clientsDesc {
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+.contactPageItem {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.contactDesc {
   font-weight: 300;
   font-size: 1rem;
 }

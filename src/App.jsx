@@ -10,7 +10,6 @@ import { Portfolio } from "./Component/Pages/Portfolio";
 import { Contact } from "./Component/Pages/Contact";
 import { Footer } from "./Component/Footer/Footer";
 
-
 function App() {
   return (
     <BrowserRouter>
@@ -24,44 +23,10 @@ function App() {
       />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route
-          path="/about"
-          element={
-            <About
-              skillTitle="What I do"
-              skillsDesc="I am a skilled and passionate developer with expertise in web and mobile application development."
-              h1="UI/UX Design"
-              p1="Creating user-friendly interfaces and experiences."
-              h2="Web Development"
-              p2="Building responsive and interactive websites."
-              h3="App Development"
-              p3="Creating mobile applications for iOS and Android."
-            />
-          }
-        />
-        <Route
-          path="/portfolio"
-          element={
-            <Portfolio
-              worksTitle="My Portfolio"
-              workDesc=" I take pride in paying attention to the smallest details and making sure that my work is pixel perfect. I am excited to bring my skills and experience to help businesses achieve their goals and create a strong online presence."
-            />
-          }
-        />
+        <Route path="/about" element={<About />} />
+        <Route path="/portfolio" element={<Portfolio />} />
         {/* <Route path="/clients" element={<Clients />} /> */}
-        <Route
-          path="/contact"
-          element={
-            <Contact
-              ContactPageTitle="My Clients"
-              clientDesc="I have had the opportunity to work with a diverse group of companies.
-                Some of the notable companies I have worked with include:"
-              ContactPageItem="Contact Me"
-              ContactDesc="Please fill in the form below to get in touch with me.."
-              sbtn="Submit"
-            />
-          }
-        />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
     </BrowserRouter>

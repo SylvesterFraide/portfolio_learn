@@ -11,19 +11,12 @@ import ig from "../../assets/ig.png";
 import x from "../../assets/x.avif";
 import youtube from "../../assets/yuotube.webp";
 
-export const Contact = ({
-  ContactPageTitle,
-  clientDesc,
-  ContactPageItem,
-  ContactDesc,
-  sbtn,
-}) => {
+export const Contact = ({ ContactPageTitle,clientDesc, ContactPageItem, ContactDesc, sbtn }) => {
   return (
     <section className="contactPage">
       <div id="clients">
-        <h1 className="contactPageTitle">{ContactPageTitle}</h1>
-        <p className="clientDesc">{clientDesc}</p>
-
+        <h1 className="clientsPageTitle">{ContactPageTitle}</h1>
+        <p className="clientsDesc">{clientDesc}</p>
         <div className="clientImgs">
           <img src={sha} alt="sha" className="clientImg" />
           <img src={microsoft} alt="microsoft" className="clientImg" />
