@@ -6,9 +6,10 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Home } from "./Component/Pages/Home";
 import { About } from "./Component/Pages/About";
 import { Portfolio } from "./Component/Pages/Portfolio";
-import { Clients } from "./Component/Pages/Clients";
+// import { Clients } from "./Component/Pages/Clients";
 import { Contact } from "./Component/Pages/Contact";
-// import Navbar from './Components/Header/Navbar';
+import { Footer } from "./Component/Footer/Footer";
+
 
 function App() {
   return (
@@ -47,11 +48,23 @@ function App() {
             />
           }
         />
-        <Route path="/clients" element={<Clients />} />
-        <Route path="/contact" element={<Contact />} />
+        {/* <Route path="/clients" element={<Clients />} /> */}
+        <Route
+          path="/contact"
+          element={
+            <Contact
+              ContactPageTitle="My Clients"
+              clientDesc="I have had the opportunity to work with a diverse group of companies.
+                Some of the notable companies I have worked with include:"
+              ContactPageItem="Contact Me"
+              ContactDesc="Please fill in the form below to get in touch with me.."
+              sbtn="Submit"
+            />
+          }
+        />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }
-
 export default App;
