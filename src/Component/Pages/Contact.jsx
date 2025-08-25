@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 // import { Link } from "react-router-dom";
 import { Link } from "react-scroll";
 import "./Contact.css";
@@ -10,8 +10,37 @@ import fb1 from "../../assets/fb1.png";
 import ig from "../../assets/ig.png";
 import x from "../../assets/x.avif";
 import youtube from "../../assets/yuotube.webp";
+import emailjs from "@emailjs/browser";
 
-export const Contact = ({ ContactPageTitle,clientDesc, ContactPageItem, ContactDesc, sbtn }) => {
+export const Contact = ({
+  ContactPageTitle,
+  clientDesc,
+  ContactPageItem,
+  ContactDesc,
+  sbtn,
+}) => {
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm("service_2o4ooxc", "template_gh0b4ng", form.current, {
+        publicKey: "py2-2W01HIkVHOPRJ",
+      })
+      .then(
+        () => {
+          console.log("SUCCESS!");
+          e.target.reset();
+          alert("Email sent successfully!");
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        }
+      );
+  };
+
   return (
     <section className="contactPage">
       <div id="clients">
@@ -27,9 +56,9 @@ export const Contact = ({ ContactPageTitle,clientDesc, ContactPageItem, ContactD
       <div id="contact">
         <h1 className="contactPageItem">{ContactPageItem}</h1>
         <span className="contactDesc">{ContactDesc}</span>
-        <form className="contactForm">
-          <input type="text" className="input" placeholder="Your Name" />
-          <input type="email" className="input" placeholder="Your Email" />
+        <form className="contactForm" ref={form} onSubmit={sendEmail}>
+          <input type="text" className="input" placeholder="Your Name" name="user_name" />
+          <input type="email" className="input" placeholder="Your Email" name="user_email" />
           <textarea
             className="input"
             name="message"
@@ -39,6 +68,7 @@ export const Contact = ({ ContactPageTitle,clientDesc, ContactPageItem, ContactD
           <button type="submit" value="send" className="sbtn">
             {sbtn}
           </button>
+
           <div className="links">
             <Link to="https://www.facebook.com/sylvester.fraide">
               <img src={fb1} alt="fb" className="link" />
